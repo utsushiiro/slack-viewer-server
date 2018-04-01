@@ -1,0 +1,8 @@
+{
+  "name": "slack-viewer-server",
+  "version": "0.1",
+  "main": "index.js",
+  "repository": "https://github.com/utsushiiro/slack-viewer-server.git",
+  "author": "utsushiiro <ozeki.haru@gmail.com>",
+  "license": "MIT"
+}
