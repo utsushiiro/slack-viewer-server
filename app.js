@@ -4,6 +4,7 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
+
 const app = express();
 
 app.use(logger('dev'));
@@ -20,7 +21,7 @@ app.use((req, res, next) => {
 
 // error handler
 app.use((err, req, res, next) => {
-  const param = {"ok": "false"};
+  const param = { ok: 'false' };
   res.header('Content-Type', 'application/json; charset=utf-8');
   res.status(err.status || 500);
   res.send(param);
